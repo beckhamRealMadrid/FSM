@@ -156,6 +156,7 @@ ch.Die();        // Dead 상태 전이
 * 상태 전이는 반드시 FSM을 통해서만 처리하도록 구성
 * CChar 내부 상태 접근 시 Lock 전제
 * TaskScheduler 연결 전까지는 Update 수동 호출 필요
+* 향후 자동 Update 처리는 별도 구현한 [ThreadTimer](https://github.com/beckhamRealMadrid/ThreadTimer)의 TaskScheduler와 연동하는 구조를 기준으로 함
 
 ---
 
