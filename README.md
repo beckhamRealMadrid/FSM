@@ -13,6 +13,12 @@
 
 ---
 
+## FSM State Transition Flow
+
+![FSM State Transition Flow](./fsm-state-transition.png)
+
+---
+
 ### 🎯 설계 목표
 
 - AI의 행동 흐름을 **상태(State) 단위로 분리**
@@ -98,7 +104,8 @@ Passive / Active 타입 FSM을 생성하고 제공하는 역할입니다.
 
 ```
 
-Idle → Stroll → Combat → Dead → Ghost
+기본 상태 흐름은 `Idle → Stroll → Combat → Dead → Ghost` 구조를 따르며,  
+실제 전이는 트리거 테이블을 통해 조건부로 처리됩니다.
 
 ```
 
